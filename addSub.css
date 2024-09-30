@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #9b59b6, #71b7e6, #9b59b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure vertical stacking */
+    height: 100vh;
+}
+
+/* Header styling */
+header {
+    /* width: 100%; */
+    background: linear-gradient(135deg, #9b59b6, #71b7e6, #9b59b6);
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counter-container {
+    text-align: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6, #71b7e6);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    border: 2px solid #2980b9;
+    width: 350px;
+}
+
+/* H1 styling */
+h1 {
+    margin-bottom: 20px;
+    color: black; /* Contrast color for text */
+}
+
+/* New counter-box style */
+.counter-box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #3498db;
+    display: inline-block;
+    min-width: 100px;
+}
+
+#counter {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons button {
+    padding: 12px 24px;
+    margin: 0 10px;
+    border: none;
+    background-color: #1b5f8d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.buttons button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
